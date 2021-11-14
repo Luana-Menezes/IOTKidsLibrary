@@ -19,10 +19,16 @@ class Sensor_UVM30A{
 };
 
 template <class T>
-void print(T content);
+void print(T content)
+{
+  Serial.print(content);
+}
 
 template <class T>
-void println(T content);
+void println(T content)
+{
+  Serial.println(content);
+}
 
 void data_transfer_speed(int value);
 void delay_seconds(float sec);
@@ -72,7 +78,4 @@ class LedBar {
         };
         int* _led_pins;
 };
-
-#include "IOTKidsLibraryTemplate.h"
-
 #endif

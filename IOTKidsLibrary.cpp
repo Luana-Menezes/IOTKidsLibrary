@@ -196,4 +196,3 @@ void LedBar::on_until(int until)
     digitalWrite(_led_pins[i], HIGH);
   }
 }
-
